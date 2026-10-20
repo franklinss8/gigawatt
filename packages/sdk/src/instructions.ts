@@ -1,4 +1,7 @@
-import anchor from "@coral-xyz/anchor";
+import * as anchorNs from "@coral-xyz/anchor";
+// CJS/ESM interop: Node ESM may expose only `default`, bundlers expose named exports.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const anchor = (((anchorNs as any).default ?? anchorNs) as typeof anchorNs);
 import type { Program } from "@coral-xyz/anchor";
 const { BN } = anchor;
 type BN = InstanceType<typeof anchor.BN>;

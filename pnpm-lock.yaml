@@ -4,6 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@solana/web3.js': 1.98.4
+  rpc-websockets>uuid: ^11.1.0
+
 importers:
 
   .:
@@ -15,7 +19,7 @@ importers:
         specifier: ^0.4.13
         version: 0.4.15(@solana/web3.js@1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6))(bufferutil@4.1.0)(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3)(utf-8-validate@6.0.6)
       '@solana/web3.js':
-        specifier: ^1.98.2
+        specifier: 1.98.4
         version: 1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)
       '@types/bn.js':
         specifier: ^5.1.6
@@ -57,7 +61,7 @@ importers:
         specifier: ^0.4.13
         version: 0.4.15(@solana/web3.js@1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6))(bufferutil@4.1.0)(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3)(utf-8-validate@6.0.6)
       '@solana/web3.js':
-        specifier: ^1.98.2
+        specifier: 1.98.4
         version: 1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)
       bs58:
         specifier: ^6.0.0
@@ -174,7 +178,7 @@ importers:
         specifier: ^0.31.1
         version: 0.31.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)
       '@solana/web3.js':
-        specifier: ^1.98.2
+        specifier: 1.98.4
         version: 1.98.4(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@6.0.6)
       '@types/bn.js':
         specifier: ^5.1.6
@@ -282,7 +286,7 @@ packages:
     resolution: {integrity: sha512-9N8AU9F0ubriKfNE3g1WF0/4dtlGXoBN/hd1PvbNBamBNwRgHxH4P+o3Zt7rSEloW1HUs6LfZEchlx9fW7POYw==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@solana/web3.js': ^1.69.0
+      '@solana/web3.js': 1.98.4
 
   '@emnapi/core@1.10.0':
     resolution: {integrity: sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==}
@@ -934,14 +938,14 @@ packages:
   '@particle-network/solana-wallet@1.3.2':
     resolution: {integrity: sha512-KviKVP87OtWq813y8IumM3rIQMNkTjHBaQmCUbTWGebz3csFOv54JIoy1r+3J3NnA+mBxBdZeRedZ5g+07v75w==}
     peerDependencies:
-      '@solana/web3.js': ^1.50.1
+      '@solana/web3.js': 1.98.4
       bs58: ^4.0.1
 
   '@project-serum/sol-wallet-adapter@0.2.6':
     resolution: {integrity: sha512-cpIb13aWPW8y4KzkZAPDgw+Kb+DXjCC6rZoH74MGm3I/6e/zKyGnfAuW5olb2zxonFqsYgnv7ev8MQnvSgJ3/g==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@solana/web3.js': ^1.5.0
+      '@solana/web3.js': 1.98.4
 
   '@protobufjs/aspromise@1.1.2':
     resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==}
@@ -1098,7 +1102,7 @@ packages:
   '@solana-mobile/mobile-wallet-adapter-protocol-web3js@2.3.0':
     resolution: {integrity: sha512-zeSNc8CcyYlVIF6xOq1ff9tLn+rCkf99eDw9sVg0k5Vrl2YGQj7UsSqhHm7dl7XfVTXj0ca0AnDAiMugwIM/rA==}
     peerDependencies:
-      '@solana/web3.js': ^1.98.4
+      '@solana/web3.js': 1.98.4
 
   '@solana-mobile/mobile-wallet-adapter-protocol@2.3.0':
     resolution: {integrity: sha512-NqAinVV9t+S65nvdUo41Z1npg4W1JjSp/K02w6xWFv2ywCdahPHpbbHYS177nDenQR2kf/8vshLOXiyV/J6HRw==}
@@ -1108,7 +1112,7 @@ packages:
   '@solana-mobile/wallet-adapter-mobile@2.3.0':
     resolution: {integrity: sha512-b49j1xUyZH0HO6vJAVCoxIVsn3kBPi9Gb2vffu0kut5rEDRSkpuo7mLJB99c0mkTl4cM0QWo0MaFweWBMyy9nQ==}
     peerDependencies:
-      '@solana/web3.js': ^1.98.4
+      '@solana/web3.js': 1.98.4
       react-native: '>0.74'
 
   '@solana-mobile/wallet-standard-mobile@0.6.0':
@@ -1845,19 +1849,19 @@ packages:
     resolution: {integrity: sha512-V1N/iX7Cr7H0uazWUT2uk27TMqlqedpXHRqqAbVO2gvmJyT0E0ummMEAVQeXZ05ZhQ/xF39DLSdBp90XebWEug==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@solana/web3.js': ^1.95.3
+      '@solana/web3.js': 1.98.4
 
   '@solana/spl-token-metadata@0.1.6':
     resolution: {integrity: sha512-7sMt1rsm/zQOQcUWllQX9mD2O6KhSAtY1hFR2hfFwgqfFWzSY9E9GDvFVNYUI1F0iQKcm6HmePU9QbKRXTEBiA==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@solana/web3.js': ^1.95.3
+      '@solana/web3.js': 1.98.4
 
   '@solana/spl-token@0.4.15':
     resolution: {integrity: sha512-3Lof3mNov8NVQ3PalIWb1Jgr/TZ6lYM+/sexv2TLqdhNFVth2OfWmH3d7QucgMjSbokkjNiNlRr6I8Fd269uaw==}
     engines: {node: '>=16'}
     peerDependencies:
-      '@solana/web3.js': ^1.95.5
+      '@solana/web3.js': 1.98.4
 
   '@solana/subscribable@2.3.0':
     resolution: {integrity: sha512-DkgohEDbMkdTWiKAoatY02Njr56WXx9e/dKKfmne8/Ad6/2llUIrax78nCdlvZW9quXMaXPTxZvdQqo9N669Og==}
@@ -1965,146 +1969,146 @@ packages:
     resolution: {integrity: sha512-WpjIGr4mI/vw5K06lv+uAmE62cXc2jvyGm+5epmYD0OmPYk0IcIb0Hy9JHZnQyI3NHdHqXKxzQ8YaUfVTZTRig==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-avana@0.1.18':
     resolution: {integrity: sha512-yV54yn33oBj1XB77IdXbTYhUceNvKxpknYeKZxyXSUCgVMsxh5hjWuLQ4Pwd07xgjuVUrnDtMWpGXgEAbGCKkA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-base-ui@0.1.7':
     resolution: {integrity: sha512-uBY/84QbqpNn/kMDYwk8t3JvMt3GTyfhtsuhGJNImaNak4A5Q9JocNw3dYKwu0ju4QeYoz9jvMbk8pFdVjk3fQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
       react: '*'
 
   '@solana/wallet-adapter-base@0.9.28':
     resolution: {integrity: sha512-RCowsJPUs/UgLL/AbyeB6hozVov2UzHf7TrVZkZyJ8HLbuLswJguOnFUhRg6V1YhCp6FO7+1/qXrgeWC0qm1Jg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-bitkeep@0.3.25':
     resolution: {integrity: sha512-1prW475sXWiNwlXvmzNg2DPXXdZ6YrX6S8qbT5+SYn09rSPjqwkuNxMPKTnKWwnQOn0i+bekY/o0rn0yQW/38w==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-bitpie@0.5.23':
     resolution: {integrity: sha512-TPoZjjcKRsD8nfkGyPCxXr2LIVN08682LAi1BkQbwuDnlQna2LYj4LSm/72qYChxbi6CxpDLx3LS/L2JBd6E5Q==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-clover@0.4.24':
     resolution: {integrity: sha512-kwbwY/G1BPCduXxMzWs0Mq2KYspx2EC3B4SVotC+Q7APPe5KeLcUidOOUxN/tzIpdG+5r9d3dXm6JEA96atlcg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-coin98@0.5.25':
     resolution: {integrity: sha512-Kmogqzz6/YDZdaI3LJ3VwNZBt9TKkjb0ODb1mVRC9EVmKfaI49v4l/FLfY5pG1F+2rD9DySrnyxrug7MWlxPDg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-coinbase@0.1.24':
     resolution: {integrity: sha512-XZfAXVzw25nka8bg6mAasAtyEXw2y+TEkOBIOs2Z+QprCzZOqmac2rsohV1mE0EZL3f2sCv/qDbWlG/fyqiPXw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-coinhub@0.3.23':
     resolution: {integrity: sha512-1agVjLYeBUSJfMaOqjyfl0DUrUUV0rYPLPY8gDeyDdYXX17uJPHmasTy4dDqIrR9OAxDTSHdufqZyqKpe/V74w==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-fractal@0.1.13':
     resolution: {integrity: sha512-eXe1iRtnMZarjrCPY4r0rvufeQz3r743D0s/zzvSPshAWOXV74AsLhlg9V4L0hf07Tw2iG6y4PohUMJB38QBiQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-huobi@0.1.20':
     resolution: {integrity: sha512-tTwz5+T9Jhvowt9pGjk5ERE/RHrAFAJSHOkXCclW5IaB5B7fP1TConZkSSluBt7zje2Ygpz8Tl9pQE2aRgEguQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-hyperpay@0.1.19':
     resolution: {integrity: sha512-0/8VGfsOHLKIPvOzyoZDsvsNYkNbEh1AVM8WdaIF9sQYwCy7qA0k+vTKJL9XS1SHFl/1lO3Cy/WkK9GCILjprA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-keystone@0.1.20':
     resolution: {integrity: sha512-Cc2ZHE3sIVR0sqJMW0fofhOIiC9CZcGrGIumst8WiFj/RqmYKxVZXugWtfPxSAoIPVPIgWeQtegLK1EK5uR/mA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-krystal@0.1.17':
     resolution: {integrity: sha512-tuz0DLe9fOQM1/MPJcgtJ1aS1GDdXdX8GYQSq2P41dke1WvsV9h5uqxoZ3/marf2lL9F7CSithr3CSD5eBHIRA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-ledger@0.9.30':
     resolution: {integrity: sha512-FGVah0kQBe0aRMY26BrENA8rej9eUUw+L2UT6qGZYUmEGDSvcrpiEk1nP66g+qL+sqVs9zbv7zJ4LIF2oiG9hg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-mathwallet@0.9.23':
     resolution: {integrity: sha512-M7C12r8VAc+hJ++rWVslDrLmXrcDlBYo2kXZf2Cj0ID0UW61onTLiakIkLYJMbl17bJ+Xq11n1EDzrp9XVCe3A==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-neko@0.2.17':
     resolution: {integrity: sha512-SSaZXxhAYg9b1ypx9W3xBWgn6Pci3+4Niv4xiD2neixKcUkq9F/dEsHiX9SJvCudT/th/1b1tug4VLzq0bvZ+Q==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-nightly@0.1.21':
     resolution: {integrity: sha512-XEnFzYfQYo+YkvO0l/xuV4YIY5M1JEIqz3wJ7hFdpDSPDTkDT29HL5YcaJq5d+XJeJpKYSQOk++5zoisTYefiQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-nufi@0.1.22':
     resolution: {integrity: sha512-T0hoOUGUtkwrmcDLdd/aBRHVPIcOvaz2R/v1JR1zDbTg7tpoB76harUpUC0DN9rQRM10BZCFgE/YItq0h/O1XA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-onto@0.1.12':
     resolution: {integrity: sha512-w4dr99PGhPI6dNbo/G5t04Oc8iRXe/Bhmxx3gKMNjZdaT6LmjHBug8lQ6x3xnFPm90SnA4RLqzta+idIJsEZ8g==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-particle@0.1.17':
     resolution: {integrity: sha512-Mx+rbfgPsam7ETaJMdqhrYyuij3TDDFNnRoJOFsAwhYpz81FAwWfY8B2Uakws8H8bIRvXjgyd1cXFzK/ZtDVSg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-phantom@0.9.30':
     resolution: {integrity: sha512-EZlliQ0EchqsGZ4P2xbP3Zn1/YuqSvi8mCueXhVIYRcu15xSGt/JhvYaIGXtVlyQBwCMoTaSyXdMJhtrMFSgRQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-react-ui@0.9.40':
     resolution: {integrity: sha512-NqwkYW+pvfKUhvO1bSff3oQ+QLl8Jv2A0QteLwoOkEvvvR576JuZJ8lB2u3cFTc3tmRCuqj780r6ItfqmE2tRA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
       react: '*'
       react-dom: '*'
 
@@ -2112,104 +2116,104 @@ packages:
     resolution: {integrity: sha512-vgWt2+y4PGMj2VQ5amDpQaMiqFfeBlcu1DIgr13/qccwVw6swr2AhYplH1h6vQl9n3lPosIHfnwClvKWfQfiIA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
       react: '*'
 
   '@solana/wallet-adapter-safepal@0.5.23':
     resolution: {integrity: sha512-jhUHCEUdEIYymLiZWhW0/O6MMFTJ8RAr4XQk2R3iZxZNff5G6EvsMlVqMSVD46pbBjuQSRzzVa94XVMIch6j5g==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-saifu@0.1.20':
     resolution: {integrity: sha512-OzoBp4HnngpZl0+HsXx77pjRa8HsB3qdJxmdkFRoUJz0zjxstWHqpEmdQQ3Iz7m2QkRi5gK+9alFUE3dpTswHw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-salmon@0.1.19':
     resolution: {integrity: sha512-KMJ+MQLB8PvPFhUmcdYeY+KcR0aiyemiGE7HoFhTLyo9fLeX5AQKrbFpZ+YDUWu26JUz0WJhoUkHUEEYUWDw+A==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-sky@0.1.20':
     resolution: {integrity: sha512-ZEDpQt519miJ7JXF254CsOlhViWEJ/apykzpnvCrXOydw/+5Eiey7DT72sEhdxA8u80EnfKmsrVQ86NI4bry5w==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-solflare@0.6.34':
     resolution: {integrity: sha512-tlbdn8ScgIqVswBDTihtIj8K5GLWtgmotWeu1GpAIfu4PtCq6DGnVYDAgP8V6XKX9x1rkm3DT52PddqaGxc8Nw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-solong@0.9.23':
     resolution: {integrity: sha512-ogsEHd1/n5veh8H1mm2e12DKAyc/leiWiOZP1sXA+GyRzUtIRGdyyompF02MdmeOWA0nbmjJzyFKp23paBX7/Q==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-spot@0.1.20':
     resolution: {integrity: sha512-M6/+hjBLWJM+0xPa3V0hrxcd6oYLDzfzlmhsAIWziGpD4xqV6yrJZ/k1lHH2bE3AtAkt3IiHTrPtNJVVxFznmw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-tokenary@0.1.17':
     resolution: {integrity: sha512-j3pfoHvaRg7j+psNnQQwbb2OcP3d7Fxj57qmxso5BwES1epUb3RZu2Ebs6xTo8itsOWOyVa0NSnc6olf1Kv3Gw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-tokenpocket@0.4.24':
     resolution: {integrity: sha512-k0lVnbfxh+mrL29esxDSCPN6lbKlK8PFxPR6DexiD/fTFMZMK7quW3dR0spVYcLj049URq1jvjuUQEZCDoZnnA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-torus@0.11.33':
     resolution: {integrity: sha512-bHDB2ZCCIewQhOt0UReTCgHgADq/RdNpBGuAOYHS2Qn5KciMexrfQgzTz+okEXpv0kUKPWOvKFUG7D6c69wTVw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-trezor@0.1.7':
     resolution: {integrity: sha512-lBNQ0tRhvJXeJL62/6cK0qJNxEI8gg9R7LVUvIOEc1zv81QP1GSEy0s9JjIP1dy0rhEP5dGSC977q0yT9DA2Sg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-trust@0.1.18':
     resolution: {integrity: sha512-yDHUJSTiFCtVPdGGq+TObJT5WIFV8TYIaGtXeCVjvSJnJIB5KA4n7GMNYiym6FYiLzAxihGLnFCSkTATlYP6gw==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-unsafe-burner@0.1.13':
     resolution: {integrity: sha512-ZK3nANskE9EM1tBJ7lM8Mxg4voQUrxyo559XV6PPTiywTK9Y9lEjbqIzzpHIkKz2/UPStHD3MMZ4G4DZvzfFYQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-walletconnect@0.1.22':
     resolution: {integrity: sha512-SzWAwWPLc7xcZTxDQVgeU8By2f2bccsto7DVS7Q+MVzccSXr7idklC1PzDRZEJSka26/r9bsdz5jxllCVSGOrg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-wallets@0.19.40':
     resolution: {integrity: sha512-TSQKgqappmBtig6rkRfV7qPWYcNkuVrD27wiSl+xFGtPU6shG5htrVSu/5x+HaXSKxw0KsVCUh4FgHXSBFtdFQ==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-adapter-xdefi@0.1.12':
     resolution: {integrity: sha512-Ee2S+52XGEeQ5fjQ6rlRaHXZU5THeZNgV7iYmjNPXBRGh8IEhV/HqijnXBQI/zVZJv2dtu/in23oqgaeTdnVmg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@solana/web3.js': ^1.99.0
+      '@solana/web3.js': 1.98.4
 
   '@solana/wallet-standard-chains@1.1.2':
     resolution: {integrity: sha512-EZobEGclDBAFplpJC5F3d/s8Xnlqc5isNKuPrd5o9ZPZ7tWN84O0e68yIZ8MAOj9V7ieRadNiHtql7uIXCTyXg==}
@@ -2227,7 +2231,7 @@ packages:
     resolution: {integrity: sha512-PNM+RYqZQODkjeS0qBdeBz/9uIEW8XckR0KvF5R0EsBxg+vwZruhhkjDi2ji28fs34Swc0VxKuUdmhxnIOeUpg==}
     engines: {node: '>=22'}
     peerDependencies:
-      '@solana/web3.js': ^1.98.0
+      '@solana/web3.js': 1.98.4
       bs58: ^6.0.0
 
   '@solana/wallet-standard-wallet-adapter-react@1.1.8':
@@ -2243,7 +2247,7 @@ packages:
   '@solflare-wallet/sdk@1.4.2':
     resolution: {integrity: sha512-jrseNWipwl9xXZgrzwZF3hhL0eIVxuEtoZOSLmuPuef7FgHjstuTtNJAeT4icA7pzdDV4hZvu54pI2r2f7SmrQ==}
     peerDependencies:
-      '@solana/web3.js': '*'
+      '@solana/web3.js': 1.98.4
 
   '@stellar/js-xdr@3.1.2':
     resolution: {integrity: sha512-VVolPL5goVEIsvuGqDc5uiKxV03lzfWdvYg1KikvwheDmTBO68CKDji3bAZ/kppZrx5iTA8z3Ld5yuytcvhvOQ==}
@@ -2879,7 +2883,7 @@ packages:
     resolution: {integrity: sha512-Qb7MT8SdkeBldfUCmF+rYW6vL98mxPuT1yAwww5X2vpx7xEPZvFCoAKnyT5fXu0v56rMxhW3MGejnHyyYdDY7Q==}
     peerDependencies:
       '@solana/wallet-adapter-base': 0.x
-      '@solana/web3.js': 1.x
+      '@solana/web3.js': 1.98.4
 
   '@walletconnect/time@1.0.2':
     resolution: {integrity: sha512-uzdd9woDcJ1AaBZRhqy5rNC9laqWGErfc4dxA9a87mPdKOgWMD85mcFo9dIYIts/Jwocfwn07EC6EzclKubk/g==}
@@ -5277,7 +5281,7 @@ packages:
   salmon-adapter-sdk@1.1.1:
     resolution: {integrity: sha512-28ysSzmDjx2AbotxSggqdclh9MCwlPJUldKkCph48oS5Xtwu0QOg8T9ZRHS2Mben4Y8sTq6VvxXznKssCYFBJA==}
     peerDependencies:
-      '@solana/web3.js': ^1.44.3
+      '@solana/web3.js': 1.98.4
 
   scheduler@0.28.0:
     resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
@@ -5809,8 +5813,8 @@ packages:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
 
-  uuid@14.0.3:
-    resolution: {integrity: sha512-Sc5u1VVln93y1Xnz4R+CunOZc7R9LUcTmhj7Rc7Eg3HVcf7rVn2FOoa812fe0W8p3jD7xeoGSYbfqCGGH2B6xw==}
+  uuid@11.1.1:
+    resolution: {integrity: sha512-vIYxrBCC/N/K+Js3qSN88go7kIfNPssr/hHCesKCQNAjmgvYS2oqr69kIufEG+O4+PfezOH4EbIeHCfFov8ZgQ==}
     hasBin: true
 
   uuid@8.3.2:
@@ -12894,7 +12898,7 @@ snapshots:
       '@types/ws': 8.18.2
       buffer: 6.0.3
       eventemitter3: 5.0.4
-      uuid: 14.0.3
+      uuid: 11.1.1
       ws: 8.22.0(bufferutil@4.1.0)(utf-8-validate@6.0.6)
     optionalDependencies:
       bufferutil: 4.1.0
@@ -13534,7 +13538,7 @@ snapshots:
 
   utils-merge@1.0.1: {}
 
-  uuid@14.0.3: {}
+  uuid@11.1.1: {}
 
   uuid@8.3.2: {}
 
