@@ -7,7 +7,9 @@
     "sync-idl": "cp target/idl/gigawatt.json packages/sdk/src/idl.json",
     "bootstrap:devnet": "tsx scripts/devnet-bootstrap.ts",
     "flush:mock": "tsx scripts/mock-flush.ts",
-    "claim:test": "tsx scripts/test-claim.ts"
+    "claim:test": "tsx scripts/test-claim.ts",
+    "test": "anchor test",
+    "test:local": "scripts/test-local.sh"
   },
   "devDependencies": {
     "@coral-xyz/anchor": "^0.31.1",

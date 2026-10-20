@@ -1,4 +1,7 @@
-import { AnchorProvider, Program, type Provider, type Wallet } from "@coral-xyz/anchor";
+import anchor from "@coral-xyz/anchor";
+import type { Provider, Wallet } from "@coral-xyz/anchor";
+const { AnchorProvider, Program } = anchor;
+type Program<T extends anchor.Idl> = anchor.Program<T>;
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
 import { IDL, type Gigawatt } from "./constants.js";
 

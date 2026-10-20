@@ -7,7 +7,8 @@
  * Odd levels: the last node is promoted as-is to the next level (no duplication).
  */
 import { PublicKey } from "@solana/web3.js";
-import { keccak_256 } from "js-sha3";
+import sha3 from "js-sha3";
+const { keccak_256 } = sha3;
 
 export const LEAF_PREFIX = 0x00;
 export const NODE_PREFIX = 0x01;

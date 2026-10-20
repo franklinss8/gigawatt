@@ -1,4 +1,7 @@
-import { BN, type Program } from "@coral-xyz/anchor";
+import anchor from "@coral-xyz/anchor";
+import type { Program } from "@coral-xyz/anchor";
+const { BN } = anchor;
+type BN = InstanceType<typeof anchor.BN>;
 import { PublicKey, type TransactionInstruction } from "@solana/web3.js";
 import type { Gigawatt } from "./types.js";
 import { findAsk, findConfig, findFlush, findClaimStatus, findWattMint } from "./pda.js";

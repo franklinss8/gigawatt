@@ -12,18 +12,12 @@ gigawatt = "DMJhUAYNidpugX2HRFrevjCoiM5fM6uczxWsMQ1G3m4n"
 [programs.devnet]
 gigawatt = "DMJhUAYNidpugX2HRFrevjCoiM5fM6uczxWsMQ1G3m4n"
 
-[registry]
-url = "https://api.apr.dev"
-
 [provider]
 cluster = "devnet"
 wallet = "scripts/.keys/deployer.json"
 
 [scripts]
-test = "pnpm exec ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "pnpm exec mocha tests/**/*.ts"
 
 [test]
 startup_wait = 10000
-
-[test.validator]
-url = "https://api.devnet.solana.com"
