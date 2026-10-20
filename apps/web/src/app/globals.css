@@ -52,12 +52,12 @@ body {
 .glow { box-shadow: 0 0 0 1px var(--line-2), 0 0 60px -20px rgba(245,196,0,0.35); }
 .marquee { animation: marquee 40s linear infinite; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-4 h-10 text-sm font-medium transition-colors; }
-.btn-primary { @apply btn bg-volt text-black hover:bg-volt-2; }
-.btn-ghost { @apply btn border border-line-2 text-fg hover:bg-bg-2; }
-.card { @apply rounded-xl border border-line bg-bg-1; }
-.label { @apply text-[11px] uppercase tracking-[0.14em] text-fg-3; }
-.input { @apply w-full rounded-md border border-line-2 bg-bg px-3 h-10 text-sm text-fg outline-none focus:border-volt; }
+@utility btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-4 h-10 text-sm font-medium transition-colors; }
+@utility btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-md px-4 h-10 text-sm font-medium transition-colors bg-volt text-black hover:bg-volt-2; }
+@utility btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-md px-4 h-10 text-sm font-medium transition-colors border border-line-2 text-fg hover:bg-bg-2; }
+@utility card { @apply rounded-xl border border-line bg-bg-1; }
+@utility label { @apply text-[11px] uppercase tracking-[0.14em] text-fg-3; }
+@utility input { @apply w-full rounded-md border border-line-2 bg-bg px-3 h-10 text-sm text-fg outline-none focus:border-volt; }
 .prose-gw h1 { @apply text-3xl font-semibold tracking-tight mb-3; }
 .prose-gw h2 { @apply text-xl font-semibold mt-10 mb-3; }
 .prose-gw h3 { @apply text-base font-semibold mt-6 mb-2; }
@@ -65,10 +65,10 @@ body {
 .prose-gw ul { @apply list-disc pl-5 my-3; }
 .prose-gw ol { @apply list-decimal pl-5 my-3; }
 .prose-gw code { @apply rounded bg-bg-2 border border-line px-1.5 py-0.5 text-[13px] text-volt-2; }
-.prose-gw pre { @apply card p-4 my-4 overflow-x-auto text-[13px] leading-6; }
+.prose-gw pre { @apply rounded-xl border border-line bg-bg-1 p-4 my-4 overflow-x-auto text-[13px] leading-6; }
 .prose-gw pre code { @apply bg-transparent border-0 p-0 text-fg; }
 .prose-gw table { @apply w-full text-sm my-4 border-collapse; }
-.prose-gw th { @apply text-left label py-2 border-b border-line; }
+.prose-gw th { @apply text-left text-[11px] uppercase tracking-[0.14em] text-fg-3 py-2 border-b border-line; }
 .prose-gw td { @apply py-2.5 pr-4 border-b border-line text-fg-2 align-top; }
 .prose-gw a { @apply text-volt hover:underline; }
 .wallet-adapter-button { @apply !bg-volt !text-black !rounded-md !h-10 !text-sm !font-medium !font-sans hover:!bg-volt-2; }
