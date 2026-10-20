@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM"],
+    "types": ["mocha", "chai", "node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "paths": { "@gigawatt/sdk": ["./packages/sdk/src/index.ts"] }
+  },
+  "include": ["tests/**/*.ts", "scripts/**/*.ts", "target/types/**/*.ts"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "gigawatt-monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:sdk": "pnpm --filter @gigawatt/sdk build",
+    "sync-idl": "cp target/idl/gigawatt.json packages/sdk/src/idl.json",
+    "bootstrap:devnet": "tsx scripts/devnet-bootstrap.ts",
+    "flush:mock": "tsx scripts/mock-flush.ts",
+    "claim:test": "tsx scripts/test-claim.ts"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
+    "@types/bn.js": "^5.1.6",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.15.0",
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "ts-mocha": "^10.1.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

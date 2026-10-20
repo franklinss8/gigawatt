@@ -1,0 +1,22 @@
+[package]
+name = "gigawatt"
+version = "0.1.0"
+description = "Gigawatt: hold the token, own the compute. WATT credits, GWATT holder rewards, on-chain ask book."
+edition = "2021"
+rust-version = "1.84"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "gigawatt"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
+anchor-spl = { version = "0.31.1" }

@@ -1,0 +1,6 @@
+{
+  "framework": "nextjs",
+  "installCommand": "cd ../.. && pnpm install --frozen-lockfile=false",
+  "buildCommand": "cd ../.. && pnpm --filter @gigawatt/sdk build && pnpm --filter web build",
+  "functions": { "src/app/v1/**/route.ts": { "maxDuration": 300 }, "src/app/api/mcp/route.ts": { "maxDuration": 300 } }
+}

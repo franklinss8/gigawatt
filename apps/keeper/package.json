@@ -1,0 +1,30 @@
+{
+  "name": "keeper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gigawatt keeper: collects pump.fun creator fees for GWATT, swaps to USDC, snapshots holders and records a flush.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "snapshot": "tsx src/snapshot.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "js-sha3": "^0.9.3",
+    "@gigawatt/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

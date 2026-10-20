@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050507;
+  --bg-1: #0b0b0f;
+  --bg-2: #121218;
+  --line: #1f1f28;
+  --line-2: #2c2c38;
+  --fg: #f2f2f5;
+  --fg-2: #a3a3b2;
+  --fg-3: #6b6b7b;
+  --volt: #f5c400;
+  --volt-2: #ffe15c;
+  --volt-dim: rgba(245, 196, 0, 0.12);
+  --ok: #3ad28a;
+  --bad: #ff5c5c;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-1: var(--bg-1);
+  --color-bg-2: var(--bg-2);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-fg: var(--fg);
+  --color-fg-2: var(--fg-2);
+  --color-fg-3: var(--fg-3);
+  --color-volt: var(--volt);
+  --color-volt-2: var(--volt-2);
+  --color-volt-dim: var(--volt-dim);
+  --color-ok: var(--ok);
+  --color-bad: var(--bad);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html { color-scheme: dark; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 50% 0%, black 30%, transparent 75%);
+}
+.glow { box-shadow: 0 0 0 1px var(--line-2), 0 0 60px -20px rgba(245,196,0,0.35); }
+.marquee { animation: marquee 40s linear infinite; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-4 h-10 text-sm font-medium transition-colors; }
+.btn-primary { @apply btn bg-volt text-black hover:bg-volt-2; }
+.btn-ghost { @apply btn border border-line-2 text-fg hover:bg-bg-2; }
+.card { @apply rounded-xl border border-line bg-bg-1; }
+.label { @apply text-[11px] uppercase tracking-[0.14em] text-fg-3; }
+.input { @apply w-full rounded-md border border-line-2 bg-bg px-3 h-10 text-sm text-fg outline-none focus:border-volt; }
+.prose-gw h1 { @apply text-3xl font-semibold tracking-tight mb-3; }
+.prose-gw h2 { @apply text-xl font-semibold mt-10 mb-3; }
+.prose-gw h3 { @apply text-base font-semibold mt-6 mb-2; }
+.prose-gw p, .prose-gw li { @apply text-fg-2 leading-7; }
+.prose-gw ul { @apply list-disc pl-5 my-3; }
+.prose-gw ol { @apply list-decimal pl-5 my-3; }
+.prose-gw code { @apply rounded bg-bg-2 border border-line px-1.5 py-0.5 text-[13px] text-volt-2; }
+.prose-gw pre { @apply card p-4 my-4 overflow-x-auto text-[13px] leading-6; }
+.prose-gw pre code { @apply bg-transparent border-0 p-0 text-fg; }
+.prose-gw table { @apply w-full text-sm my-4 border-collapse; }
+.prose-gw th { @apply text-left label py-2 border-b border-line; }
+.prose-gw td { @apply py-2.5 pr-4 border-b border-line text-fg-2 align-top; }
+.prose-gw a { @apply text-volt hover:underline; }
+.wallet-adapter-button { @apply !bg-volt !text-black !rounded-md !h-10 !text-sm !font-medium !font-sans hover:!bg-volt-2; }
+.wallet-adapter-modal-wrapper { @apply !bg-bg-1 !border !border-line; }
+.wallet-adapter-modal-list li button { @apply !bg-bg-2; }

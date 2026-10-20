@@ -1,0 +1,14 @@
+node_modules
+.next
+dist
+target
+!target/idl
+!target/types
+.env
+.env.*
+!.env.example
+scripts/.keys
+*.log
+.DS_Store
+.anchor
+test-ledger
